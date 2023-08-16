@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "money-tree"
   spec.add_dependency "ecdsa", "~> 1.2.0"
-  spec.add_dependency "digest-sha3", "~> 1.1.0"
+  spec.add_dependency 'keccak', '~> 1.3'
   spec.add_dependency "rlp", "~> 0.7.3"
   spec.add_dependency "bip_mnemonic"
   spec.add_dependency "eth"

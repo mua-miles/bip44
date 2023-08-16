@@ -8,7 +8,7 @@ module Bip44
 
       # from ethereum public key to ethereum address
       bytes = Bip44::Utils.hex_to_bin(ethereum_public)
-      address_bytes = Digest::SHA3.new(256).digest(bytes)[-20..-1]
+      address_bytes = Digest::Keccak.new(256).digest(bytes)[-20..-1]
       address = Bip44::Utils.bin_to_hex(address_bytes)
       Bip44::Utils.prefix_hex(address)
     end

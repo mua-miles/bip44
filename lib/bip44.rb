@@ -1,6 +1,6 @@
 require "bip44/version"
 require 'ecdsa'
-require 'digest/sha3'
+require 'digest/keccak'
 require 'rlp'
 require 'money-tree'
 require 'bip_mnemonic'
